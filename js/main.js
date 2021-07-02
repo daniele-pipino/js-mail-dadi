@@ -18,30 +18,40 @@
 
 // 'database' email
 
-var maildatabase = ['Daniele_pipino@icloud.com', 'ginopaoli@gmail.com', 'rosadeiventi@hotmail.com', 'pinolalavatrice@libero.it'];
-console.table(maildatabase);
+// var maildatabase = ['Daniele_pipino@icloud.com', 'ginopaoli@gmail.com', 'rosadeiventi@hotmail.com', 'pinolalavatrice@libero.it'];
+// console.table(maildatabase);
 
 // chiediamo all'utente la sua mail
 
-var mailrequest = prompt('Inserisci la tua mail');
-console.log('User Email: ', mailrequest);
+// var mailrequest = prompt('Inserisci la tua mail');
+// console.log('User Email: ', mailrequest);
 
 // verificare l'esistenza della  mail
 
-var mailvalidation = mailrequest.includes('Daniele_pipino@icloud.com');
-console.log(mailvalidation);
+// var mailvalidation = mailrequest.includes('Daniele_pipino@icloud.com');
+// console.log(mailvalidation);
 
 // alert 
 
-if (mailvalidation == true) {
-    alert('Login Successfully')
-} else {
-    alert('Login Unsuccesfully...Try Again');
-    window.location.reload(true);
-}
+// if (mailvalidation == true) {
+//     alert('Login Successfully')
+// } else {
+//     alert('Login Unsuccesfully...Try Again');
+//     window.location.reload(true);
+// }
 
 // ---------------gioco dei dadi----------------//
 
+var usernumber = Math.floor(Math.random() * 7) + 1;
+console.log('user: ', usernumber);
 
+var cpunumber = Math.floor(Math.random() * 7) + 1;
+console.log('cpu: ', cpunumber);
 
-
+if (usernumber > cpunumber) {
+    alert('User win!')
+} else if (usernumber == cpunumber) {
+    alert('Equal')
+}else {
+    alert('cpu Win!')
+}
