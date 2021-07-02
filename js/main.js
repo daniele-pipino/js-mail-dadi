@@ -1,4 +1,4 @@
-// ----------------------------------Traccia-----------------------------------------
+// ----------------------------------Traccia-----------------------------------------//
 
 // Mail
 // Chiedi all’utente la sua email,
@@ -14,14 +14,34 @@
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 
-// ----------------------------------Svolgimento Mail-----------------------------------------
+// ----------------------------------Svolgimento Mail-----------------------------------------//
 
+// 'database' email
+
+var maildatabase = ['Daniele_pipino@icloud.com', 'ginopaoli@gmail.com', 'rosadeiventi@hotmail.com', 'pinolalavatrice@libero.it'];
+console.table(maildatabase);
 
 // chiediamo all'utente la sua mail
 
 var mailrequest = prompt('Inserisci la tua mail');
-console.log('Mail: ', mailrequest);
+console.log('User Email: ', mailrequest);
 
 // verificare l'esistenza della  mail
+
+var mailvalidation = mailrequest.includes('Daniele_pipino@icloud.com');
+console.log(mailvalidation);
+
+// alert 
+
+if (mailvalidation == true) {
+    alert('Login Successfully')
+} else {
+    alert('Login Unsuccesfully...Try Again');
+    window.location.reload(true);
+}
+
+// ---------------gioco dei dadi----------------//
+
+
 
 
