@@ -42,10 +42,10 @@
 
 // ---------------gioco dei dadi----------------//
 
-var usernumber = Math.floor(Math.random() * 7) + 1;
+var usernumber = Math.floor(Math.random() * 6) + 1;
 console.log('user: ', usernumber);
 
-var cpunumber = Math.floor(Math.random() * 7) + 1;
+var cpunumber = Math.floor(Math.random() * 6) + 1;
 console.log('cpu: ', cpunumber);
 
 if (usernumber > cpunumber) {
